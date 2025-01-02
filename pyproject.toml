@@ -11,6 +11,8 @@ django = "^5.1.4"
 psycopg2 = "^2.9.10"
 pillow = "^11.1.0"
 python-dotenv = "^1.0.1"
+black = "^24.10.0"
+isort = "^5.13.2"
 
 
 [build-system]
