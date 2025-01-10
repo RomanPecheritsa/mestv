@@ -4571,6 +4571,7 @@ input[type="button"].btn-block {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.8rem 1rem;
+  color: red;
 }
 
 .navbar > .container,
@@ -11355,7 +11356,7 @@ p {
 }
 
 .navbar-brand .brand-img {
-  width: 45px;
+  width: 120px;
   margin: -0.3125rem 0;
 }
 
