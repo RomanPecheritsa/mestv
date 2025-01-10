@@ -1,0 +1,35 @@
+{% load static %}
+<nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix"
+     data-offset-top="20" style="justify-content: center;">
+    <div class="container" style="display: flex; justify-content: center; align-items: center;">
+        <a class="navbar-brand" href="#"><img src={% static "imgs/logo.svg" %} alt="" class="brand-img"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"
+             style="display: flex; justify-content: center;">
+            <ul class="navbar-nav" style="display: flex; justify-content: center; width: 100%;">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'houses:home' %}">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Генеральный план</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'houses:house_list' %}">Дома</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Интерьер</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Новости</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

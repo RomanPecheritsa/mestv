@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Ollie landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Moscow Estate - Загородные дома под ключ возле Москвы</title>
+
+    <link rel="stylesheet" href={% static "vendors/themify-icons/css/themify-icons.css" %}>
+    <link rel="stylesheet" href={% static "vendors/owl-carousel/css/owl.carousel.css" %}>
+    <link rel="stylesheet" href={% static "vendors/owl-carousel/css/owl.theme.default.css" %}>
+    <link rel="stylesheet" href={% static "css/ollie.css" %}>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+{% include 'includes/inc_nav_main_menu.html' %}
+{% block content %}
+{% endblock %}
+<br>
+{#{% include 'includes/inc_footer.html'%}#}
+
+<script src={% static "vendors/jquery/jquery-3.4.1.js" %}></script>
+<script src={% static "vendors/bootstrap/bootstrap.bundle.js" %}></script>
+<script src={% static "vendors/bootstrap/bootstrap.affix.js" %}></script>
+<script src={% static "vendors/owl-carousel/js/owl.carousel.js" %}></script>
+<script src={% static "js/ollie.js" %}></script>
+
+</body>
+</html>
