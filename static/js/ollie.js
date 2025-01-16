@@ -32,10 +32,24 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $("#owl-portfolio").owlCarousel({
+        loop: true,  // Бесконечная прокрутка
+        margin: 20,  // Отступ между элементами
+        nav: true,   // Включить стрелки
+        navText: ["‹", "›"],  // Текст или символы для стрелок
+        responsive: {
+            0: { items: 1 },  // На маленьких экранах 1 элемент
+            600: { items: 2 },  // На средних экранах 2 элемента
+            1000: { items: 3 }  // На больших экранах 3 элемента
+        }
+    });
+});
+
 // portfolio carousel
 $('#owl-portfolio').owlCarousel({
     margin:30,
-    dots: false,
+    dots: true,
     responsiveClass:true,
     responsive:{
         0:{
