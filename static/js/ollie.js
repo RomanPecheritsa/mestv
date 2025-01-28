@@ -13,7 +13,6 @@
 */
 
 // smooth scroll
-// smooth scroll
 $(document).ready(function(){
     $(".navbar .nav-link").on('click', function(event) {
 
@@ -28,7 +27,7 @@ $(document).ready(function(){
             }, 700, function(){
                 window.location.hash = hash;
             });
-        } 
+        }
     });
 });
 
@@ -75,4 +74,22 @@ $('#owl-testmonial').owlCarousel({
     loop:true,
     nav: true,
     dots: false
-})
+});
+
+// Кнопка "Наверх"
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+};
+
+scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
