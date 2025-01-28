@@ -1,22 +1,26 @@
+from django.shortcuts import get_object_or_404
 from django.views import generic
-from django.views.generic import TemplateView
 
-from houses.models import ContactInfo, HeaderText, House
+from houses.models import ContactInfo, HeaderText, House, Interior
 
 
-class HomePageView(TemplateView):
+class HomePageView(generic.TemplateView):
     template_name = "main.html"
 
     def get_context_data(self, **kwargs):
         data = super().get_context_data()
-        data["header_texts"] = HeaderText.objects.all()
-        data["header_button_text"] = "Наши дома"
+
         data["title"] = "Moscow Estate - загородные дома под ключ возле Москвы"
+
+        data["header_texts"] = HeaderText.objects.all()
         data["contact_info"] = ContactInfo.objects.first()
+
+        data["main_houses"] = House.objects.all().order_by('?')[:4]
+        data["main_interiors"] = Interior.objects.all().order_by('?')[:3]
         return data
 
 
-class ComponentsPageView(TemplateView):
+class ComponentsPageView(generic.TemplateView):
     template_name = "components.html"
 
 
@@ -24,21 +28,41 @@ class HouseListView(generic.ListView):
     model = House
     queryset = House.objects.all()
     context_object_name = "houses"
-
-    def get_context_data(self, *, object_list=None, **kwargs):
-        data = super().get_context_data(**kwargs)
-        houses_with_main_photo = []
-        for house in data["houses"]:
-            main_photo = house.photos.filter(is_main=True).first()
-            houses_with_main_photo.append({"house": house, "main_photo": main_photo})
-        data["houses_with_main_photo"] = houses_with_main_photo
-
-        return data
+    paginate_by = 8
 
 
-#
-#
-# class HouseDetailView(generic.DetailView):
-#     model = House
-#     queryset = House.objects.all()
-#     context_object_name = 'house'
+class HouseDetailView(generic.DetailView):
+    model = House
+    queryset = House.objects.all()
+    context_object_name = 'house'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        house = self.get_object()
+        if house.album:
+            context['photos'] = house.album.photos.all()
+        else:
+            context['photos'] = []
+        return context
+
+
+class InteriorGalleryView(generic.ListView):
+    model = Interior
+    template_name = "houses/interior_gallery.html"
+    context_object_name = "interiors"
+
+    def get_queryset(self):
+        return Interior.objects.all().order_by("-created_at")
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        interior_id = self.request.GET.get("interior")
+
+        if interior_id:
+            active_interior = get_object_or_404(Interior, id=interior_id)
+        else:
+            active_interior = Interior.objects.first()
+
+        context["active_interior"] = active_interior
+        context["photos"] = active_interior.album.photos.all() if active_interior.album else []
+        return context
