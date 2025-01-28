@@ -1,17 +1,18 @@
 {% load static %}
+{% load custom_filters %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Ollie landing page.">
-    <meta name="author" content="Devcrud">
+    <meta name="description" content="Moscow Estate - turnkey country houses near Moscow">
+    <meta name="author" content="Roman Pecheritsa">
     <title>{{ title }}</title>
 
     <link rel="stylesheet" href={% static 'vendors/owl-carousel/css/owl.carousel.css' %}>
     <link rel="stylesheet" href={% static 'vendors/owl-carousel/css/owl.theme.default.css' %}>
     <link rel="stylesheet" href={% static 'css/ollie.css' %}>
-    <link rel="stylesheet" href={% static 'icons/font/bootstrap-icons.css' %}>
+    <link rel="stylesheet" href="{% static 'icons/bootstrap-icons.css' %}">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -28,7 +29,6 @@
                 <p>Мы — компания Moscow Estate, специализирующаяся на строительстве загородных домов вашей мечты. Мы
                     создаем комфортное и качественное жилье, которое становится идеальным местом для жизни, отдыха и
                     вдохновения.</p>
-
             </div>
             <div class="col-sm-6 col-md-4 ml-auto">
                 <div class="widget">
@@ -45,7 +45,7 @@
                         <i class="bi bi-emoji-smile"></i>
                     </div>
                     <div class="infos-wrapper">
-                        <h4 class="text-primary">125+</h4>
+                        <h4 class="text-primary">500+</h4>
                         <p>Довольных клиентов</p>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                         <i class="bi bi-house"></i>
                     </div>
                     <div class="infos-wrapper">
-                        <h4 class="text-primary">3434+</h4>
+                        <h4 class="text-primary">200+</h4>
                         <p>Реализованных проектов</p>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                         <i class="bi bi-people"></i>
                     </div>
                     <div class="infos-wrapper">
-                        <h4 class="text-primary">80+</h4>
+                        <h4 class="text-primary">50+</h4>
                         <p>Человек в команде</p>
                     </div>
                 </div>
@@ -74,108 +74,60 @@
     </div>
 </section>
 
-<section class="section" id="interior">
-    <div class="container">
-        <h6 class="xs-font mb-0">Blanditiis unde illum earum</h6>
-        <h3 class="section-title mb-4">Expertises</h3>
-
-        <div class="row text-center">
-            <div class="col-lg-4">
-                <a href="javascript:void(0)" class="card border-0 text-dark">
-                    <img class="card-img-top" src={% static 'imgs/img-5.jpg' %} alt="Download free bootstrap 4 landing
-                         page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap
-                         4.1.1 templates, ollie Landing page">
-                    <span class="card-body">
-                            <h4 class="title mt-4">Codding &amp; Designing</h4>
-                            <p class="xs-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </span>
-                </a>
-            </div>
-            <div class="col-lg-4">
-                <a href="javascript:void(0)" class="card border-0 text-dark">
-                    <img class="card-img-top" src={% static 'imgs/img-6.jpg' %} alt="Download free bootstrap 4 landing
-                         page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap
-                         4.1.1 templates, ollie Landing page">
-                    <span class="card-body">
-                            <h4 class="title mt-4">Graphic Design</h4>
-                            <p class="xs-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </span>
-                </a>
-            </div>
-            <div class="col-lg-4">
-                <a href="javascript:void(0)" class="card border-0 text-dark">
-                    <img class="card-img-top" src={% static 'imgs/img-7.jpg' %} alt="Download free bootstrap 4 landing
-                         page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap
-                         4.1.1 templates, ollie Landing page">
-                    <span class="card-body">
-                            <h4 class="title mt-4">Development</h4>
-                            <p class="xs-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </span>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section class="section" id="houses">
     <div class="container">
-        <h6 class="xs-font mb-0">Culpa perferendis excepturi.</h6>
-        <h3 class="section-title pb-4">Our Products</h3>
+        <h6 class="xs-font mb-0">Которые мы построили</h6>
+        <h3 class="section-title pb-4">Дома</h3>
     </div>
 
 
     <div id="owl-portfolio" class="owl-carousel owl-theme mt-4">
-        <a href="javascript:void(0)" class="item expertises-item">
-            <img src={% static 'imgs/img-1.jpg' %} alt="Download free bootstrap 4 landing page, free boootstrap 4
-                 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing
-                 page" class="box-shadow">
-            <h6 class="mt-3 mb-2">Fuga asperiores</h6>
-            <p class="xs-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </a>
-        <a href="javascript:void(0)" class="item expertises-item">
-            <img src={% static 'imgs/img-2.jpg' %} alt="Download free bootstrap 4 landing page, free boootstrap 4
-                 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing
-                 page" class="box-shadow">
-            <h6 class="mt-3 mb-2">Voluptatibus iure!</h6>
-            <p class="xs-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </a>
-        <a href="javascript:void(0)" class="item expertises-item">
-            <img src={% static 'imgs/img-3.jpg' %} alt="Download free bootstrap 4 landing page, free boootstrap 4
-                 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing
-                 page" class="box-shadow">
-            <h6 class="mt-3 mb-2">Autem minus animi</h6>
-            <p class="xs-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </a>
-        <a href="javascript:void(0)" class="item expertises-item">
-            <img src={% static 'imgs/img-4.jpg' %} alt="Download free bootstrap 4 landing page, free boootstrap 4
-                 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing
-                 page" class="box-shadow">
-            <h6 class="mt-3 mb-2">Sed eligendi</h6>
-            <p class="xs-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </a>
-        <a href="javascript:void(0)" class="item expertises-item">
-            <img src={% static 'imgs/img-8.jpg' %} alt="Download free bootstrap 4 landing page, free boootstrap 4
-                 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing
-                 page" class="box-shadow">
-            <h6 class="mt-3 mb-2">Totam eveniet assumenda!</h6>
-            <p class="xs-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </a>
-        <a href="javascript:void(0)" class="item expertises-item">
-            <img src={% static 'imgs/img-9.jpg' %} alt="Download free bootstrap 4 landing page, free boootstrap 4
-                 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing
-                 page" class="box-shadow">
-            <h6 class="mt-3 mb-2">Sapiente dolore ut</h6>
-            <p class="xs-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </a>
+        {% for house in main_houses %}
+            <a href="{% url 'houses:house_detail'  house.pk %}" class="item expertises-item">
+            <img src="{{ house.main_photo.url }}" alt="{{ house.name }}">
+            <h6 class="mt-3 mb-2">{{ house.name }}</h6>
+            <p class="xs-font">{{ house.description|truncate_smart:100 }}</p>
+            </a>
+        {% endfor %}
+    </div>
+    <div style="text-align: center">
+        <a class="btn btn-primary btn-rounded" href={% url 'houses:house_list' %}>Все дома</a>
     </div>
 
+</section>
+
+<section class="section" id="interior">
+    <div class="container">
+        <h6 class="xs-font mb-0">Которого мы придерживаемся</h6>
+        <h3 class="section-title mb-4">Интерьер</h3>
+
+        <div class="row text-center">
+            {% for interior in main_interiors %}
+            <div class="col-lg-4">
+                <a href="{% url 'houses:interior_gallery' %}?interior={{ interior.id }}" class="card border-0 text-dark">
+                    <img class="card-img-top" src="{{ interior.main_photo.url }}" alt="{{ interior.name }}">
+                    <span class="card-body">
+                        <h4 class="title mt-4">{{ interior.name }}</h4>
+                        <p class="xs-font">{{ interior.description }}</p>
+                    </span>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <br>
+    <br>
+    <div style="text-align: center">
+        <a class="btn btn-primary btn-rounded" href="{% url 'houses:interior_gallery' %}">Все интерьеры</a>
+    </div>
 </section>
 
 <section class="section" id="news">
 
     <div class="container mb-3">
-        <h6 class="xs-font mb-0">Culpa perferendis excepturi.</h6>
-        <h3 class="section-title mb-5">Our Blog</h3>
+        <h6 class="xs-font mb-0">Рассказываем о событиях</h6>
+        <h3 class="section-title mb-5">Новости</h3>
 
         <div class="blog-wrapper">
             <div class="img-wrapper">
@@ -222,19 +174,19 @@
                         <h6>Контактная информация</h6>
                     </li>
                     <li class="list-body">
-                        <p class="py-2">Свяжитесь с нами и мы ответим вам в течении 24 часов</p>
-                        <p class="py-2"><i class="bi bi-geo-alt"></i> {{ contact_info.address }}</p>
-                        <p class="py-2"><i class="bi bi-envelope"></i> {{ contact_info.email }}</p>
-                        <p class="py-2"><i class="bi bi-telephone"></i> {{ contact_info.phone }}</p>
+                        <p class="py-2"><i class="bi bi-geo-alt"></i>{{ contact_info.address }}</p>
+                        <p class="py-2"><i class="bi bi-envelope"></i>{{ contact_info.email }}</p>
+                        <p class="py-2"><i class="bi bi-telephone"></i>{{ contact_info.phone }}</p>
 
                     </li>
                 </ul>
             </div>
         </div>
+
         {% include 'includes/footer.html' %}
     </div>
 </section>
-
+{% include 'includes/scroll_button.html' %}
 <script src={% static 'vendors/jquery/jquery-3.4.1.js' %}></script>
 <script src={% static 'vendors/bootstrap/bootstrap.bundle.js' %}></script>
 <script src={% static 'vendors/bootstrap/bootstrap.affix.js' %}></script>

@@ -8,7 +8,8 @@
                     <div class="carousel-item {% if text.is_active %}active{% endif %}">
                         <div class="carousel-caption d-none d-md-block">
                             <h2 class="carousel-title">{{ text.title }}</h2>
-                            <button class="btn btn-primary btn-rounded">{{ header_button_text }}</button>
+                            <a class="btn btn-primary btn-rounded"
+                               href={% url 'houses:house_list' %}>Дома</a>
                         </div>
                     </div>
                 {% endfor %}
@@ -24,8 +25,8 @@
         <div class="socials text-right">
             <div class="row justify-content-between">
                 <div class="col">
-                    <a class="d-block subtitle"><i class="bi bi-telephone"></i> {{ contact_info.phone }}</a>
-                    <a class="d-block subtitle"><i class="bi bi-envelope"></i> {{ contact_info.email }}</a>
+                    <a class="d-block subtitle"><i class="bi bi-telephone"></i>  {{ contact_info.phone }}</a>
+                    <a class="d-block subtitle"><i class="bi bi-envelope"></i>    {{ contact_info.email }}</a>
                 </div>
                 <div class="col">
                     <h6 class="subtitle font-weight-normal mb-2">Социальные сети</h6>

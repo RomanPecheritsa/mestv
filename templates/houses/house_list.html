@@ -1,52 +1,49 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load custom_filters %}
 {% include 'includes/navmenu.html' %}
 {% block content %}
-    <div class="container-fluid mt-4">
-        <div class="row">
-            <div class="col-md-3 col-sm-6 mb-4">
-                <a href="javascript:void(0)" class="item expertises-item">
-                    <img src="{% static 'imgs/img-1.jpg' %}" alt="Fuga asperiores" class="box-shadow img-fluid">
-                    <h6 class="mt-3 mb-2">Fuga asperiores</h6>
-                    <p class="xs-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-4">
-                <a href="javascript:void(0)" class="item expertises-item">
-                    <img src="{% static 'imgs/img-2.jpg' %}" alt="Voluptatibus iure!" class="box-shadow img-fluid">
-                    <h6 class="mt-3 mb-2">Voluptatibus iure!</h6>
-                    <p class="xs-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-4">
-                <a href="javascript:void(0)" class="item expertises-item">
-                    <img src="{% static 'imgs/img-3.jpg' %}" alt="Autem minus animi" class="box-shadow img-fluid">
-                    <h6 class="mt-3 mb-2">Autem minus animi</h6>
-                    <p class="xs-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-4">
-                <a href="javascript:void(0)" class="item expertises-item">
-                    <img src="{% static 'imgs/img-4.jpg' %}" alt="Sed eligendi" class="box-shadow img-fluid">
-                    <h6 class="mt-3 mb-2">Sed eligendi</h6>
-                    <p class="xs-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-4">
-                <a href="javascript:void(0)" class="item expertises-item">
-                    <img src="{% static 'imgs/img-8.jpg' %}" alt="Totam eveniet assumenda!"
-                         class="box-shadow img-fluid">
-                    <h6 class="mt-3 mb-2">Totam eveniet assumenda!</h6>
-                    <p class="xs-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-4">
-                <a href="javascript:void(0)" class="item expertises-item">
-                    <img src="{% static 'imgs/img-9.jpg' %}" alt="Sapiente dolore ut" class="box-shadow img-fluid">
-                    <h6 class="mt-3 mb-2">Sapiente dolore ut</h6>
-                    <p class="xs-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </a>
+    <section class="section">
+        <div class="container">
+            <h6 class="xs-font mb-0">Реализованные проекты</h6>
+            <h3 class="section-title pb-4">Дома</h3>
+        </div>
+        <div class="container-fluid mt-4">
+            <div class="row">
+                {% if houses %}
+                    {% for house in houses %}
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <a href={% url 'houses:house_detail'  house.pk %} class="item expertises-item">
+                                <img src="{{ house.main_photo.url }}" alt="{{ house.name }}"
+                                     class="box-shadow img-fluid">
+                                <h6 class="mt-3 mb-2">{{ house.name }}</h6>
+                                <p class="xs-font">{{ house.description|truncate_smart:100 }}</p>
+                            </a>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="container">
+                        <h3 class="text-center">Список пуст</h3>
+                    </div>
+                {% endif %}
             </div>
         </div>
-    </div>
+        {% if is_paginated %}
+            <nav aria-label="Page navigation example">
+                <ul class="pagination pagination-lg justify-content-center">
+                    {% for page_num in paginator.page_range %}
+                        {% if page_num == page_obj.number %}
+                            <li class="page-item active">
+                                <a class="page-link" href="#">{{ page_num }}</a>
+                            </li>
+                        {% else %}
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{ page_num }}">{{ page_num }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </nav>
+        {% endif %}
+    </section>
 {% endblock %}
