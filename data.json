@@ -1,0 +1,46 @@
+[
+{
+    "model": "houses.headertext",
+    "pk": 1,
+    "fields": {
+        "title": "Строим дома вашей мечты: уютные загородные резиденции под ключ",
+        "is_active": false
+    }
+},
+{
+    "model": "houses.headertext",
+    "pk": 2,
+    "fields": {
+        "title": "Надежное строительство загородных домов с гарантией качества",
+        "is_active": false
+    }
+},
+{
+    "model": "houses.headertext",
+    "pk": 3,
+    "fields": {
+        "title": "Создаем пространство для счастья: дома, которые вдохновляют",
+        "is_active": true
+    }
+},
+{
+    "model": "houses.headertext",
+    "pk": 4,
+    "fields": {
+        "title": "Ваш идеальный дом начинается здесь — доверьтесь профессионалам",
+        "is_active": false
+    }
+},
+{
+    "model": "houses.contactinfo",
+    "pk": 1,
+    "fields": {
+        "address": "г. Москва, п. Первомайское, д. Рожново, 34",
+        "phone": "+7 963 640-77-80",
+        "email": "mestv@test.com",
+        "telegram": "http://localhost:8000/",
+        "whatsapp": "http://localhost:8000/",
+        "instagram": "http://localhost:8000/"
+    }
+}
+]
