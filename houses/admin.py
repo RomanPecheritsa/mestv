@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.utils.html import format_html
-from houses.models import Album, Photo, House, Interior, ContactInfo, HeaderText
+
+from houses.models import (Album, ContactInfo, HeaderText, House, Interior,
+                           News, Photo)
 
 
 class PhotoInline(admin.TabularInline):
@@ -11,7 +13,9 @@ class PhotoInline(admin.TabularInline):
 
     def preview(self, obj):
         if obj.image:
-            return format_html('<img src="{}" width="100" height="75" />', obj.image.url)
+            return format_html(
+                '<img src="{}" width="100" height="75" />', obj.image.url
+            )
         return "Нет изображения"
 
     preview.short_description = "Превью"
@@ -26,21 +30,33 @@ class AlbumAdmin(admin.ModelAdmin):
 
 @admin.register(House)
 class HouseAdmin(admin.ModelAdmin):
-    list_display = ("name", "description", "created_at", "album_link", "main_photo_preview")
+    list_display = (
+        "name",
+        "description",
+        "created_at",
+        "album_link",
+        "main_photo_preview",
+    )
     search_fields = ("name",)
     list_filter = ("created_at",)
     readonly_fields = ("main_photo_preview",)
 
     def album_link(self, obj):
         if obj.album:
-            return format_html('<a href="/admin/houses/album/{}/change/">{}</a>', obj.album.id, obj.album.name)
+            return format_html(
+                '<a href="/admin/houses/album/{}/change/">{}</a>',
+                obj.album.id,
+                obj.album.name,
+            )
         return "-"
 
     album_link.short_description = "Альбом"
 
     def main_photo_preview(self, obj):
         if obj.main_photo:
-            return format_html('<img src="{}" width="100" height="75" />', obj.main_photo.url)
+            return format_html(
+                '<img src="{}" width="100" height="75" />', obj.main_photo.url
+            )
         return "Нет фото"
 
     main_photo_preview.short_description = "Превью"
@@ -48,21 +64,33 @@ class HouseAdmin(admin.ModelAdmin):
 
 @admin.register(Interior)
 class InteriorAdmin(admin.ModelAdmin):
-    list_display = ("name", "description", "created_at", "album_link", "main_photo_preview")
+    list_display = (
+        "name",
+        "description",
+        "created_at",
+        "album_link",
+        "main_photo_preview",
+    )
     search_fields = ("name",)
     list_filter = ("created_at",)
     readonly_fields = ("main_photo_preview",)
 
     def album_link(self, obj):
         if obj.album:
-            return format_html('<a href="/admin/houses/album/{}/change/">{}</a>', obj.album.id, obj.album.name)
+            return format_html(
+                '<a href="/admin/houses/album/{}/change/">{}</a>',
+                obj.album.id,
+                obj.album.name,
+            )
         return "-"
 
     album_link.short_description = "Альбом"
 
     def main_photo_preview(self, obj):
         if obj.main_photo:
-            return format_html('<img src="{}" width="100" height="75" />', obj.main_photo.url)
+            return format_html(
+                '<img src="{}" width="100" height="75" />', obj.main_photo.url
+            )
         return "Нет фото"
 
     main_photo_preview.short_description = "Превью"
@@ -84,3 +112,25 @@ class HeaderTextAdmin(admin.ModelAdmin):
         queryset.update(is_active=True)
 
     set_active.short_description = "Сделать активным выбранный текст"
+
+
+@admin.register(News)
+class NewsAdmin(admin.ModelAdmin):
+    list_display = (
+        "name",
+        "description",
+        "created_at",
+        "main_photo_preview",
+    )
+    search_fields = ("name",)
+    list_filter = ("created_at",)
+    readonly_fields = ("main_photo_preview",)
+
+    def main_photo_preview(self, obj):
+        if obj.main_photo:
+            return format_html(
+                '<img src="{}" width="100" height="75" />', obj.main_photo.url
+            )
+        return "Нет фото"
+
+    main_photo_preview.short_description = "Превью"
