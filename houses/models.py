@@ -48,8 +48,10 @@ class House(models.Model):
     """Модель дома"""
 
     name = models.CharField(max_length=100, verbose_name="Название дома")
-    description = models.CharField(max_length=255, verbose_name="Описание")
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата и время создания', **NULLABLE)
+    description = models.TextField(verbose_name="Описание")
+    created_at = models.DateTimeField(
+        auto_now_add=True, verbose_name="Дата и время создания", **NULLABLE
+    )
     main_photo = ProcessedImageField(
         upload_to=main_photo_path,
         processors=[ResizeToFill(800, 600)],
@@ -63,7 +65,7 @@ class House(models.Model):
     )
 
     class Meta:
-        ordering = ('-created_at',)
+        ordering = ("-created_at",)
         verbose_name = "Дом"
         verbose_name_plural = "Дома"
 
@@ -76,7 +78,9 @@ class Interior(models.Model):
 
     name = models.CharField(max_length=50, verbose_name="Название интерьера")
     description = models.CharField(max_length=255, verbose_name="Описание")
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата и время создания')
+    created_at = models.DateTimeField(
+        auto_now_add=True, verbose_name="Дата и время создания"
+    )
     main_photo = ProcessedImageField(
         upload_to=main_photo_path,
         processors=[ResizeToFill(800, 600)],
@@ -90,12 +94,37 @@ class Interior(models.Model):
     )
 
     class Meta:
-        ordering = ('-created_at',)
+        ordering = ("-created_at",)
         verbose_name = "Интерьер"
         verbose_name_plural = "Интерьеры"
 
     def __str__(self):
         return self.name
+
+
+class News(models.Model):
+    """Модель новости"""
+
+    name = models.CharField(max_length=100, verbose_name="Название новости")
+    description = models.TextField(verbose_name="Описание")
+    created_at = models.DateTimeField(
+        auto_now_add=True, verbose_name="Дата и время создания"
+    )
+    main_photo = ProcessedImageField(
+        upload_to=main_photo_path,
+        processors=[ResizeToFill(800, 600)],
+        format="JPEG",
+        options={"quality": 80},
+        verbose_name="Фото",
+        **NULLABLE,
+    )
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "Новость"
+        verbose_name_plural = "Новости"
 
 
 class ContactInfo(models.Model):
