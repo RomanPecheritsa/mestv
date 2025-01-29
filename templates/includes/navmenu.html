@@ -1,0 +1,32 @@
+{% load static %}
+<nav class="navbar navbar-expand-sm navbar-light bg-light rounded shadow mb-3">
+    <div class="container">
+        <a class="navbar-brand" href={% url 'houses:home' %}><img src={% static 'imgs/logo.svg' %} class="brand-img"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href={% url 'houses:home' %}>Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Дома</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Интерьер</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Новости</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

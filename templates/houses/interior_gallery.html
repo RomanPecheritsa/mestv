@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load custom_filters %}
+{% block content %}
+    <section class="gallery-block compact-gallery">
+        <div class="container">
+            <h6 class="xs-font mb-0">Которого мы придерживаемся</h6>
+            <h3 class="section-title pb-4">Интерьер</h3>
+        </div>
+        <div style="text-align: center">
+            {% for interior in interiors %}
+                <a href="{% url 'houses:interior_gallery' %}?interior={{ interior.id }}"
+                   class="text-decoration-none">
+            <span class="badge {% if interior == active_interior %}badge-primary{% else %}badge-light{% endif %}"
+                  style="font-size: 1rem;">
+                {{ interior.name }}
+            </span>
+                </a>
+            {% endfor %}
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row no-gutters">
+                {% for photo in photos %}
+                    <div class="col-md-6 col-lg-3 item zoom-on-hover">
+                        <a class="lightbox" href={{ photo.image.url }}>
+                            <img class="img-fluid image scale-on-hover" src={{ photo.image.url }}>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

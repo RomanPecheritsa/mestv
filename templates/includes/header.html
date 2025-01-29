@@ -1,0 +1,38 @@
+<header id="home" class="header">
+    <div class="overlay"></div>
+
+    <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="container">
+            <div class="carousel-inner">
+                {% for text in header_texts %}
+                    <div class="carousel-item {% if text.is_active %}active{% endif %}">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="carousel-title">{{ text.title }}</h2>
+                            <a class="btn btn-primary btn-rounded"
+                               href={% url 'houses:house_list' %}>Дома</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="infos container mb-4 mb-md-2">
+        <div class="title">
+            <h5>Moscow Estate</h5>
+            <p class="font-small">Загородные дома мечты</p>
+        </div>
+        <div class="socials text-right">
+            <div class="row justify-content-between">
+                <div class="col">
+                    <a class="d-block subtitle"><i class="bi bi-telephone"></i>  {{ contact_info.phone }}</a>
+                    <a class="d-block subtitle"><i class="bi bi-envelope"></i>    {{ contact_info.email }}</a>
+                </div>
+                <div class="col">
+                    <h6 class="subtitle font-weight-normal mb-2">Социальные сети</h6>
+                    {% include 'includes/socialmedia.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
