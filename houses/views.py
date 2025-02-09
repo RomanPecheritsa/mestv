@@ -34,9 +34,9 @@ class HouseListView(generic.ListView):
 
 class NewsListView(generic.ListView):
     model = News
-    queryset = News.objects.all()
+    queryset = News.objects.all().order_by("-created_at")
     context_object_name = "news_list"
-    paginate_by = 6
+    paginate_by = 5
 
 
 class HouseDetailView(generic.DetailView):
