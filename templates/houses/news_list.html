@@ -3,30 +3,28 @@
 {% load custom_filters %}
 {% include 'includes/navmenu.html' %}
 {% block content %}
-    <section class="section">
-        <div class="container">
-            <h6 class="xs-font mb-0">Реализованные проекты</h6>
-            <h3 class="section-title pb-4">Дома</h3>
-        </div>
-        <div class="container-fluid mt-4">
-            <div class="row">
-                {% if houses %}
-                    {% for house in houses %}
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <a href="{% url 'houses:house_detail'  house.pk %}" class="item expertises-item">
-                            <img src="{{ house.main_photo.url }}" alt="{{ house.name }}"
-                                 class="box-shadow img-fluid">
-                            <h6 class="mt-3 mb-2">{{ house.name }}</h6>
-                            <p class="xs-font">{{ house.description|truncate_smart:200 }}</p>
-                            </a>
+    <section class="section" id="news">
+        <div class="container mb-3">
+            <h6 class="xs-font mb-0">Рассказываем о последних событиях</h6>
+            <h3 class="section-title mb-5">Новости</h3>
+            {% for news in news_list %}
+                <div class="blog-wrapper">
+                    <div class="img-wrapper">
+                        <img src="{{ news.main_photo.url }}" alt="{{ news.photo.name }}">
+                        <div class="date-container">
+                            <h6 class="day">{{ news.created_at|date:"j" }}</h6>
+                            <h6 class="mun">{{ news.created_at|date:"M" }}</h6>
                         </div>
-                    {% endfor %}
-                {% else %}
-                    <div class="container">
-                        <h3 class="text-center">Список пуст</h3>
                     </div>
-                {% endif %}
-            </div>
+                    <div class="txt-wrapper">
+                        <h4 class="blog-title">{{ news.name }}</h4>
+                        <p>{{ news.description }}</p>
+                    </div>
+                </div>
+                <br>
+            {% endfor %}
+            <br>
+            <br>
         </div>
         {% if is_paginated %}
             <nav aria-label="Page navigation example">
@@ -45,7 +43,6 @@
                 </ul>
             </nav>
         {% endif %}
-        <br>
         <div style="text-align: center">
             <a class="btn btn-outline-primary btn-rounded" href={% url 'houses:home' %}>На главную</a>
         </div>
