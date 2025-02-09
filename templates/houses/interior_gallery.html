@@ -23,13 +23,18 @@
         <div class="container">
             <div class="row no-gutters">
                 {% for photo in photos %}
-                    <div class="col-md-6 col-lg-3 item zoom-on-hover">
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
                         <a class="lightbox" href={{ photo.image.url }}>
                             <img class="img-fluid image scale-on-hover" src={{ photo.image.url }}>
                         </a>
                     </div>
                 {% endfor %}
             </div>
+        </div>
+        <br>
+        <br>
+        <div style="text-align: center">
+            <a class="btn btn-outline-primary btn-rounded" href={% url 'houses:home' %}>На главную</a>
         </div>
     </section>
 {% endblock %}
