@@ -1,5 +1,1166 @@
 [
 {
+    "model": "houses.album",
+    "pk": 1,
+    "fields": {
+        "name": "Дом 1",
+        "description": "Альбом для дома 1"
+    }
+},
+{
+    "model": "houses.album",
+    "pk": 2,
+    "fields": {
+        "name": "Внутреняя отделка",
+        "description": "Альбом для интерьера внутренняя отделка"
+    }
+},
+{
+    "model": "houses.album",
+    "pk": 3,
+    "fields": {
+        "name": "Мебель",
+        "description": "Альбом для интерьера мебели"
+    }
+},
+{
+    "model": "houses.album",
+    "pk": 4,
+    "fields": {
+        "name": "Фасады",
+        "description": "Альбом для интерьера фасада"
+    }
+},
+{
+    "model": "houses.album",
+    "pk": 5,
+    "fields": {
+        "name": "Дом 2",
+        "description": "Альбом для дома 2"
+    }
+},
+{
+    "model": "houses.album",
+    "pk": 6,
+    "fields": {
+        "name": "Дом 3",
+        "description": "Альбом для дом 3"
+    }
+},
+{
+    "model": "houses.album",
+    "pk": 7,
+    "fields": {
+        "name": "Дом 4",
+        "description": "Альбом для дом 4"
+    }
+},
+{
+    "model": "houses.album",
+    "pk": 8,
+    "fields": {
+        "name": "Дом 5",
+        "description": "Альбом для дома 5"
+    }
+},
+{
+    "model": "houses.album",
+    "pk": 9,
+    "fields": {
+        "name": "Дом 6",
+        "description": "Альбом для дома 6"
+    }
+},
+{
+    "model": "houses.album",
+    "pk": 10,
+    "fields": {
+        "name": "Дом 7",
+        "description": "Альбом дома 7"
+    }
+},
+{
+    "model": "houses.album",
+    "pk": 11,
+    "fields": {
+        "name": "Дом 8",
+        "description": "Альбом дом 8"
+    }
+},
+{
+    "model": "houses.album",
+    "pk": 12,
+    "fields": {
+        "name": "Дом 9",
+        "description": "Альбом дом 9"
+    }
+},
+{
+    "model": "houses.album",
+    "pk": 13,
+    "fields": {
+        "name": "Дом 10",
+        "description": "Альбом дом 10"
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 1,
+    "fields": {
+        "album": 1,
+        "image": "houses/albums/album_1/290d8e2da06c4783bf6dc8e54bf299b7.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 2,
+    "fields": {
+        "album": 1,
+        "image": "houses/albums/album_1/3d97df141cea4b4dba92ea2008a26df0.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 3,
+    "fields": {
+        "album": 1,
+        "image": "houses/albums/album_1/d853b236162f4be4ba2dbd777e9d3309.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 4,
+    "fields": {
+        "album": 1,
+        "image": "houses/albums/album_1/a7fcd8dd97794e54a7725ebaf1b1ad9c.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 5,
+    "fields": {
+        "album": 1,
+        "image": "houses/albums/album_1/33396bf7bcfe44579d552ce7bb820811.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 6,
+    "fields": {
+        "album": 1,
+        "image": "houses/albums/album_1/6f84973486f24c9d8fca9f3c81a954bc.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 7,
+    "fields": {
+        "album": 1,
+        "image": "houses/albums/album_1/7f99c75facc74762875481a9a7f522e3.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 8,
+    "fields": {
+        "album": 1,
+        "image": "houses/albums/album_1/fec72984bff0463e97c95487a88b97e4.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 9,
+    "fields": {
+        "album": 1,
+        "image": "houses/albums/album_1/ee8cb5a995cb4cdcb97993bf061f4640.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 10,
+    "fields": {
+        "album": 1,
+        "image": "houses/albums/album_1/6a581e0c3a5c4fb38dc2a8c1bfbc7594.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 11,
+    "fields": {
+        "album": 2,
+        "image": "houses/albums/album_2/237b43b0c7ba406b927a287a167222aa.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 12,
+    "fields": {
+        "album": 2,
+        "image": "houses/albums/album_2/3f9628bda5d94baa9c67f209cf81728d.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 13,
+    "fields": {
+        "album": 2,
+        "image": "houses/albums/album_2/888f5ad12d7940a48240f77b84de5670.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 14,
+    "fields": {
+        "album": 2,
+        "image": "houses/albums/album_2/4faa5a04dc17467ca2a3bafe7c09ad1f.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 15,
+    "fields": {
+        "album": 2,
+        "image": "houses/albums/album_2/eb4b31336a464be0bdd8fd7c6f473340.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 16,
+    "fields": {
+        "album": 2,
+        "image": "houses/albums/album_2/fe013d6df5384318a91ca55d590760d1.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 17,
+    "fields": {
+        "album": 2,
+        "image": "houses/albums/album_2/5f48746da53244aa8121570f6fdc47f9.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 18,
+    "fields": {
+        "album": 2,
+        "image": "houses/albums/album_2/8e655daf0aed497fbcc15816d32fed81.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 19,
+    "fields": {
+        "album": 2,
+        "image": "houses/albums/album_2/842aade6084949bf9b21d601e7b7d638.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 20,
+    "fields": {
+        "album": 2,
+        "image": "houses/albums/album_2/cde84f77b94a44adbdd35e39a3c33088.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 21,
+    "fields": {
+        "album": 3,
+        "image": "houses/albums/album_3/3a5cb4225afd4b3c89073f9339cc2149.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 22,
+    "fields": {
+        "album": 3,
+        "image": "houses/albums/album_3/049f19b812514eec923372f3461bd859.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 23,
+    "fields": {
+        "album": 3,
+        "image": "houses/albums/album_3/1caeade3dcfd4dd683595084542526ad.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 24,
+    "fields": {
+        "album": 3,
+        "image": "houses/albums/album_3/103ae3e0b9ea4539bc98b342500cd7cb.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 25,
+    "fields": {
+        "album": 3,
+        "image": "houses/albums/album_3/d45255a886424e93b8da38d1b940a4cd.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 26,
+    "fields": {
+        "album": 3,
+        "image": "houses/albums/album_3/2db43ec1d72c476ba21f5dd6f673d88b.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 27,
+    "fields": {
+        "album": 3,
+        "image": "houses/albums/album_3/d6ea9f777cba43798c7ea2231b65667e.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 28,
+    "fields": {
+        "album": 3,
+        "image": "houses/albums/album_3/6c191e8afad54d579fe8a10171520146.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 29,
+    "fields": {
+        "album": 3,
+        "image": "houses/albums/album_3/37ca32febcc245adaab5ee835013c40d.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 30,
+    "fields": {
+        "album": 3,
+        "image": "houses/albums/album_3/1766a267aab04ef1af649075cc2fd5ce.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 32,
+    "fields": {
+        "album": 4,
+        "image": "houses/albums/album_4/c8acc622e2a74dc9a827f00aaaa2ae58.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 33,
+    "fields": {
+        "album": 4,
+        "image": "houses/albums/album_4/bc7c809d744f4421a7c8392c54fbd572.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 34,
+    "fields": {
+        "album": 4,
+        "image": "houses/albums/album_4/80bdcaba18394b13b2738dbe4cb4f507.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 35,
+    "fields": {
+        "album": 4,
+        "image": "houses/albums/album_4/98d39cd8488645c181ac360a911feec0.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 36,
+    "fields": {
+        "album": 4,
+        "image": "houses/albums/album_4/590d9e1c218d401a8340a5e97721348f.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 37,
+    "fields": {
+        "album": 4,
+        "image": "houses/albums/album_4/176edd6f55e84a17bae24d05621372e6.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 38,
+    "fields": {
+        "album": 4,
+        "image": "houses/albums/album_4/5e322a2481254695a644355aede18a3c.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 39,
+    "fields": {
+        "album": 4,
+        "image": "houses/albums/album_4/3caf6635ddbc418f955ee354bce1a374.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 40,
+    "fields": {
+        "album": 4,
+        "image": "houses/albums/album_4/448c97465a9b4e9a8ded609a03383834.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 41,
+    "fields": {
+        "album": 4,
+        "image": "houses/albums/album_4/e017392879824e6d90c897b14be26e0e.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 42,
+    "fields": {
+        "album": 5,
+        "image": "houses/albums/album_5/130b2ccac61d4eec870fea1aa4ba337b.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 43,
+    "fields": {
+        "album": 5,
+        "image": "houses/albums/album_5/307cd28a36994919b4361df34a5463c9.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 44,
+    "fields": {
+        "album": 5,
+        "image": "houses/albums/album_5/a95195f035e44f44b3c6981898bec80f.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 45,
+    "fields": {
+        "album": 5,
+        "image": "houses/albums/album_5/7a0c79c17e8a4bccb768dd83faf63e71.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 46,
+    "fields": {
+        "album": 5,
+        "image": "houses/albums/album_5/4377daae2b7f47e995df3ef83c0a859e.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 47,
+    "fields": {
+        "album": 6,
+        "image": "houses/albums/album_6/aedb8ff3a9a449ffbf9886320fc1c42d.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 48,
+    "fields": {
+        "album": 6,
+        "image": "houses/albums/album_6/be3aa32aab544e889fc4f61b61aa265b.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 49,
+    "fields": {
+        "album": 6,
+        "image": "houses/albums/album_6/730293ed3e864f02af59b1d5c6b928c6.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 50,
+    "fields": {
+        "album": 6,
+        "image": "houses/albums/album_6/597387acd81e4f7d9646108374c3edd0.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 51,
+    "fields": {
+        "album": 6,
+        "image": "houses/albums/album_6/32e03761b85f40e98a5733959f669dc3.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 52,
+    "fields": {
+        "album": 7,
+        "image": "houses/albums/album_7/4e8f4042db734773975cef9e7bbce0bb.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 53,
+    "fields": {
+        "album": 7,
+        "image": "houses/albums/album_7/311f31e711634338abda8ecc2ad89752.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 54,
+    "fields": {
+        "album": 7,
+        "image": "houses/albums/album_7/ae9326d153884c418d6f32fadbf94c85.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 55,
+    "fields": {
+        "album": 7,
+        "image": "houses/albums/album_7/59f10823afff44cf93f0d4a4cbed1b09.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 56,
+    "fields": {
+        "album": 7,
+        "image": "houses/albums/album_7/dbb4c613e604441ab19d35211ccdc35f.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 57,
+    "fields": {
+        "album": 8,
+        "image": "houses/albums/album_8/9b2d347d5cd44c3882a987e9ec56d690.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 58,
+    "fields": {
+        "album": 8,
+        "image": "houses/albums/album_8/4fc5ba766f554968bd10ff7cbdd72a87.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 59,
+    "fields": {
+        "album": 8,
+        "image": "houses/albums/album_8/c9d3e9ef14274002927732e823b8cb84.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 60,
+    "fields": {
+        "album": 8,
+        "image": "houses/albums/album_8/2a07f985c9274090a71ed02f47737958.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 61,
+    "fields": {
+        "album": 8,
+        "image": "houses/albums/album_8/e3fa3bb9a92d47f2835f8bd175b442d7.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 62,
+    "fields": {
+        "album": 9,
+        "image": "houses/albums/album_9/b975d3f519864adc80d16e16ea355796.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 63,
+    "fields": {
+        "album": 9,
+        "image": "houses/albums/album_9/b83abf3e0f484bc58d6cae58a1580c71.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 64,
+    "fields": {
+        "album": 9,
+        "image": "houses/albums/album_9/cec113e3fdaa40458370695858469ec6.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 65,
+    "fields": {
+        "album": 9,
+        "image": "houses/albums/album_9/e2dbed4f4a2b427eb5cde8eebdc1ff2c.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 66,
+    "fields": {
+        "album": 9,
+        "image": "houses/albums/album_9/73dc6af8394e45f6a90b618e49ed1513.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 67,
+    "fields": {
+        "album": 9,
+        "image": "houses/albums/album_9/f8071e6d181c445c8968024ed660f59f.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 68,
+    "fields": {
+        "album": 9,
+        "image": "houses/albums/album_9/826e87a599b648acbaec7f653feb836d.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 69,
+    "fields": {
+        "album": 10,
+        "image": "houses/albums/album_10/7aa482651ac142fd802ce83168ff1e50.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 70,
+    "fields": {
+        "album": 10,
+        "image": "houses/albums/album_10/e30016302da24693b9aadc3a266a247a.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 71,
+    "fields": {
+        "album": 10,
+        "image": "houses/albums/album_10/53e3812eaa8443e1a7d5c085b42a3cb0.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 72,
+    "fields": {
+        "album": 10,
+        "image": "houses/albums/album_10/c9c28f368c5b4285a73b565995df6551.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 73,
+    "fields": {
+        "album": 10,
+        "image": "houses/albums/album_10/98d186677fcc40159c64313e519ca8cc.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 74,
+    "fields": {
+        "album": 10,
+        "image": "houses/albums/album_10/03473b53471b4b58b71270021733a699.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 75,
+    "fields": {
+        "album": 10,
+        "image": "houses/albums/album_10/18ba0403c3d44a72b0d830ed8414b3f8.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 76,
+    "fields": {
+        "album": 11,
+        "image": "houses/albums/album_11/6c64626b074f4fcfaf5b5e70729e67cb.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 77,
+    "fields": {
+        "album": 11,
+        "image": "houses/albums/album_11/38d849247fa74e3cbea0ed9836a3f00f.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 78,
+    "fields": {
+        "album": 11,
+        "image": "houses/albums/album_11/ded2a7b0d27448f285cb3fbf2b344889.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 79,
+    "fields": {
+        "album": 11,
+        "image": "houses/albums/album_11/4b68ce4d4b8e4e54a7086a102f4126df.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 80,
+    "fields": {
+        "album": 11,
+        "image": "houses/albums/album_11/9a1f0b429f7a4a6497673d5922664c51.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 81,
+    "fields": {
+        "album": 11,
+        "image": "houses/albums/album_11/30020e29b79e43b5b19d760966bfe48f.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 82,
+    "fields": {
+        "album": 11,
+        "image": "houses/albums/album_11/b86b3857858f4c5e8a7a85aa408bb7c2.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 83,
+    "fields": {
+        "album": 12,
+        "image": "houses/albums/album_12/5463ceeaa3dc4e93b2dc9bfafd990d7b.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 84,
+    "fields": {
+        "album": 12,
+        "image": "houses/albums/album_12/6102a64aa5d045ee8c2e18197d4b16df.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 85,
+    "fields": {
+        "album": 12,
+        "image": "houses/albums/album_12/3a655ef91e144163b6e28c3ba48f260d.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 86,
+    "fields": {
+        "album": 12,
+        "image": "houses/albums/album_12/7d45ddea506240e79618839ff9716b3d.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 87,
+    "fields": {
+        "album": 12,
+        "image": "houses/albums/album_12/86a514bb33a54911b4aafcccb5a77874.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 88,
+    "fields": {
+        "album": 12,
+        "image": "houses/albums/album_12/93c5fbfad293468bb36a9fe1a7bbbabf.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 89,
+    "fields": {
+        "album": 12,
+        "image": "houses/albums/album_12/e329072a08c84c24a15c53752e9d56d4.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 90,
+    "fields": {
+        "album": 12,
+        "image": "houses/albums/album_12/3eb92fe7c19e471399ccafea2456b9fc.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 91,
+    "fields": {
+        "album": 12,
+        "image": "houses/albums/album_12/1435f65f8d344b8aa605a5187c1d8fe3.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 92,
+    "fields": {
+        "album": 13,
+        "image": "houses/albums/album_13/e19024ccc51d4737a64ce79e93c35946.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 93,
+    "fields": {
+        "album": 13,
+        "image": "houses/albums/album_13/1b18c8ffd56a4d8d8c6f0c2f2371a3e8.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 94,
+    "fields": {
+        "album": 13,
+        "image": "houses/albums/album_13/80a8e1301eec4b9d926a97b20c01e3ed.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 95,
+    "fields": {
+        "album": 13,
+        "image": "houses/albums/album_13/a616456df97445b3b00354f0b00b5b3d.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 96,
+    "fields": {
+        "album": 13,
+        "image": "houses/albums/album_13/a81b8fe21bb34b5299c23aa95f34a9b1.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 97,
+    "fields": {
+        "album": 13,
+        "image": "houses/albums/album_13/bdaf5776007c47c39c4aa7629015097c.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 98,
+    "fields": {
+        "album": 13,
+        "image": "houses/albums/album_13/fdbb28e11d9f4528a027dcb343dcce4f.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.photo",
+    "pk": 99,
+    "fields": {
+        "album": 13,
+        "image": "houses/albums/album_13/5f185bd929df4afba534e19dd4d20c90.jpg",
+        "description": null
+    }
+},
+{
+    "model": "houses.house",
+    "pk": 1,
+    "fields": {
+        "name": "Современный загородный дом в стиле шале",
+        "description": "Этот уютный двухэтажный дом, построенный нами, воплощает в себе гармонию природы и современных технологий. В его основе – натуральные материалы: дерево и кирпич, которые создают теплую атмосферу и подчеркивают элегантность дизайна.",
+        "created_at": "2025-01-28T18:35:48.240Z",
+        "main_photo": "houses/main_photo/house_main_photo/68f638bd147f406ea0bef587b81416ba.jpg",
+        "album": 1
+    }
+},
+{
+    "model": "houses.house",
+    "pk": 2,
+    "fields": {
+        "name": "Дом 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae ducimus dolor sed numquam, assumenda non dolorem in facilis eius alias voluptates, fugit maiores aspernatur ad rem saepe molestiae consequuntur. adipisicing elit. Repellat nam placeat laboriosam dolorum aperiam fuga voluptate, quis ea vel ab sunt incidunt quasi, molestias atque deserunt voluptates quae voluptatum sit.",
+        "created_at": "2025-01-29T14:01:20.004Z",
+        "main_photo": "houses/main_photo/house_main_photo/7879aee5f21a4d4e9c6b96d944fe4ac2.jpg",
+        "album": 5
+    }
+},
+{
+    "model": "houses.house",
+    "pk": 3,
+    "fields": {
+        "name": "Дом 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae ducimus dolor sed numquam, assumenda non dolorem in facilis eius alias voluptates, fugit maiores aspernatur ad rem saepe molestiae consequuntur. adipisicing elit. Repellat nam placeat laboriosam dolorum aperiam fuga voluptate, quis ea vel ab sunt incidunt quasi, molestias atque deserunt voluptates quae voluptatum sit.",
+        "created_at": "2025-01-29T14:02:47.696Z",
+        "main_photo": "houses/main_photo/house_main_photo/8bc901205ea444f6a5600ec7f62bb4e1.jpg",
+        "album": 6
+    }
+},
+{
+    "model": "houses.house",
+    "pk": 4,
+    "fields": {
+        "name": "Дом 4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae ducimus dolor sed numquam, assumenda non dolorem in facilis eius alias voluptates, fugit maiores aspernatur ad rem saepe molestiae consequuntur. adipisicing elit. Repellat nam placeat laboriosam dolorum aperiam fuga voluptate, quis ea vel ab sunt incidunt quasi, molestias atque deserunt voluptates quae voluptatum sit.",
+        "created_at": "2025-01-29T14:05:33.629Z",
+        "main_photo": "houses/main_photo/house_main_photo/d15c53ce5eae4f2b80277db0e014bbd7.jpg",
+        "album": 7
+    }
+},
+{
+    "model": "houses.house",
+    "pk": 5,
+    "fields": {
+        "name": "Дом 5",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae ducimus dolor sed numquam, assumenda non dolorem in facilis eius alias voluptates, fugit maiores aspernatur ad rem saepe molestiae consequuntur. adipisicing elit. Repellat nam placeat laboriosam dolorum aperiam fuga voluptate, quis ea vel ab sunt incidunt quasi, molestias atque deserunt voluptates quae voluptatum sit.",
+        "created_at": "2025-01-29T14:17:05.401Z",
+        "main_photo": "houses/main_photo/house_main_photo/3e25cd9229d948d4827e64e8e2e536f2.jpg",
+        "album": 8
+    }
+},
+{
+    "model": "houses.house",
+    "pk": 6,
+    "fields": {
+        "name": "Дом 6",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae ducimus dolor sed numquam, assumenda non dolorem in facilis eius alias voluptates, fugit maiores aspernatur ad rem saepe molestiae consequuntur. adipisicing elit. Repellat nam placeat laboriosam dolorum aperiam fuga voluptate, quis ea vel ab sunt incidunt quasi, molestias atque deserunt voluptates quae voluptatum sit.",
+        "created_at": "2025-01-29T17:24:15.022Z",
+        "main_photo": "houses/main_photo/house_main_photo/f61d454a93ab41d09efb603f86e3527b.jpg",
+        "album": 9
+    }
+},
+{
+    "model": "houses.house",
+    "pk": 7,
+    "fields": {
+        "name": "Дом 7",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae ducimus dolor sed numquam, assumenda non dolorem in facilis eius alias voluptates, fugit maiores aspernatur ad rem saepe molestiae consequuntur. adipisicing elit. Repellat nam placeat laboriosam dolorum aperiam fuga voluptate, quis ea vel ab sunt incidunt quasi, molestias atque deserunt voluptates quae voluptatum sit.",
+        "created_at": "2025-01-29T17:26:10.462Z",
+        "main_photo": "houses/main_photo/house_main_photo/66070966e6404d97a51abf361adba828.jpg",
+        "album": 10
+    }
+},
+{
+    "model": "houses.house",
+    "pk": 8,
+    "fields": {
+        "name": "Дом 8",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae ducimus dolor sed numquam, assumenda non dolorem in facilis eius alias voluptates, fugit maiores aspernatur ad rem saepe molestiae consequuntur. adipisicing elit. Repellat nam placeat laboriosam dolorum aperiam fuga voluptate, quis ea vel ab sunt incidunt quasi, molestias atque deserunt voluptates quae voluptatum sit.",
+        "created_at": "2025-01-29T17:27:56.647Z",
+        "main_photo": "houses/main_photo/house_main_photo/ae4cb3ced27745ae89bafdac8ea90496.jpg",
+        "album": 11
+    }
+},
+{
+    "model": "houses.house",
+    "pk": 9,
+    "fields": {
+        "name": "Дом 9",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae ducimus dolor sed numquam, assumenda non dolorem in facilis eius alias voluptates, fugit maiores aspernatur ad rem saepe molestiae consequuntur. adipisicing elit. Repellat nam placeat laboriosam dolorum aperiam fuga voluptate, quis ea vel ab sunt incidunt quasi, molestias atque deserunt voluptates quae voluptatum sit.",
+        "created_at": "2025-01-29T17:29:28.345Z",
+        "main_photo": "houses/main_photo/house_main_photo/6864a4cf4b3b45f283611524f9c1e0f8.jpg",
+        "album": 12
+    }
+},
+{
+    "model": "houses.house",
+    "pk": 10,
+    "fields": {
+        "name": "Дом 10",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae ducimus dolor sed numquam, assumenda non dolorem in facilis eius alias voluptates, fugit maiores aspernatur ad rem saepe molestiae consequuntur. adipisicing elit. Repellat nam placeat laboriosam dolorum aperiam fuga voluptate, quis ea vel ab sunt incidunt quasi, molestias atque deserunt voluptates quae voluptatum sit.",
+        "created_at": "2025-01-29T17:37:19.279Z",
+        "main_photo": "houses/main_photo/house_main_photo/04dde1223ac24c20a0d8835ed0d93f89.jpg",
+        "album": 13
+    }
+},
+{
+    "model": "houses.interior",
+    "pk": 1,
+    "fields": {
+        "name": "Внутренняя отделка",
+        "description": "Описание внутенняя отделка",
+        "created_at": "2025-01-28T18:58:21.461Z",
+        "main_photo": "houses/main_photo/interior_main_photo/d7c946c05042472c881140524744e563.jpg",
+        "album": 2
+    }
+},
+{
+    "model": "houses.interior",
+    "pk": 2,
+    "fields": {
+        "name": "Мебель",
+        "description": "Описание мебель",
+        "created_at": "2025-01-28T19:00:28.387Z",
+        "main_photo": "houses/main_photo/interior_main_photo/4243a0811bd94b2594ee22d68e1c7641.jpg",
+        "album": 3
+    }
+},
+{
+    "model": "houses.interior",
+    "pk": 3,
+    "fields": {
+        "name": "Фасады",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae ducimus dolor sed numquam, assumenda non dolorem in facilis eius alias voluptates, fugit maiores aspernatur ad rem saepe molestiae consequuntur. adipisicing elit. Repellat nam placeat",
+        "created_at": "2025-01-28T20:26:40.413Z",
+        "main_photo": "houses/main_photo/interior_main_photo/bac44219b5b348dbb3279aa55cd148e2.jpg",
+        "album": 4
+    }
+},
+{
+    "model": "houses.news",
+    "pk": 1,
+    "fields": {
+        "name": "Построен новый дом",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae ducimus dolor sed numquam, assumenda non dolorem in facilis eius alias voluptates, fugit maiores aspernatur ad rem saepe molestiae consequuntur. adipisicing elit. Repellat nam placeat laboriosam dolorum aperiam fuga voluptate, quis ea vel ab sunt incidunt quasi, molestias atque deserunt voluptates quae voluptatum sit.",
+        "created_at": "2025-01-29T08:48:00.150Z",
+        "main_photo": "houses/main_photo/news_main_photo/bac4aab2122a42e3848773c69e748b1e.jpg"
+    }
+},
+{
+    "model": "houses.news",
+    "pk": 2,
+    "fields": {
+        "name": "Построен 2 дом",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae ducimus dolor sed numquam, assumenda non dolorem in facilis eius alias voluptates, fugit maiores aspernatur ad rem saepe molestiae consequuntur. adipisicing elit. Repellat nam placeat laboriosam dolorum aperiam fuga voluptate, quis ea vel ab sunt incidunt quasi, molestias atque deserunt voluptates quae voluptatum sit.",
+        "created_at": "2025-01-29T09:16:48.544Z",
+        "main_photo": "houses/main_photo/news_main_photo/b5f42930a68a4e6680389f058c8646ac.jpg"
+    }
+},
+{
+    "model": "houses.contactinfo",
+    "pk": 1,
+    "fields": {
+        "address": "г. Москва, п. Первомайское, д. Рожново, 34",
+        "phone": "+7 963 640-77-80",
+        "email": "mestv@test.com",
+        "telegram": "http://localhost:8000/",
+        "whatsapp": "http://localhost:8000/",
+        "instagram": "http://localhost:8000/"
+    }
+},
+{
     "model": "houses.headertext",
     "pk": 1,
     "fields": {
@@ -29,18 +1190,6 @@
     "fields": {
         "title": "Ваш идеальный дом начинается здесь — доверьтесь профессионалам",
         "is_active": false
-    }
-},
-{
-    "model": "houses.contactinfo",
-    "pk": 1,
-    "fields": {
-        "address": "г. Москва, п. Первомайское, д. Рожново, 34",
-        "phone": "+7 963 640-77-80",
-        "email": "mestv@test.com",
-        "telegram": "http://localhost:8000/",
-        "whatsapp": "http://localhost:8000/",
-        "instagram": "http://localhost:8000/"
     }
 }
 ]
